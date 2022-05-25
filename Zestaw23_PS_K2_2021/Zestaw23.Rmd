@@ -1,0 +1,47 @@
+---
+title: "Programowanie strukturalne - Kolokwium 2 - Zestaw 23"
+lang: pl
+output:
+  word_document: default
+  pdf_document: default
+---
+
+**Każde zadanie powinno być w oddzielnym pliku. Rozwiązanie umieść 
+na swoim indywidualnym repozytorium na Githubie (pojedyncze pliki) lub prześlij jako archiwum zip
+poprzez wiadomość prywatną na MS Teams. Szczegóły są opisane w zespole ćwiczeń w MS Teams.** 
+
+1. W folderze Debug223 znajduje się projekt z kodem w języku C.
+W pliku main.c w niektórych linijkach są komentarze. 
+Twoim zadaniem jest wpisanie wartości odpowiednich zmiennych po wykonaniu konkretnej linii kodu.
+
+*Punktacja: 7 pkt.*
+
+2. Napisz funkcję, której argumentem jest napis. Funkcja zwraca numer indeksu, na którym występuje pierwsza od prawej mała litera. W przypadku pustego napisu lub braku małych liter, funkcja powinna zwracać zero. W zadaniu nie korzystaj z funkcji bibliotecznych poza instrukcjami wejścia/wyjścia. Stwórz przypadek testowy.
+
+*Punktacja: 8 pkt.*
+
+3. Napisz funkcję, której argumentem jest dwuwymiarowa tablica tablic (zawierająca zmienne typu `int`) oraz jej wymiary $n$ i $m$. Funkcja ma odwrócić kolejność elementów w wierszach o parzystych indeksach. Stwórz przypadek testowy.
+
+Przykład.
+
+$$\left[\begin{array}{ccc} 2 & 3 & -3\\ 1 & 4 & 7 \\ -3 & -6 & 11 \\ -2 & 8 & 23\end{array}\right] \longrightarrow\left[\begin{array}{ccc} 2 & 3 & -3\\ 1 & 4 & 7 \\ 11 & -6 & -3 \\ -2 & 8 & 23\end{array}\right]$$
+
+*Punktacja: 10 pkt.*
+
+4. Stwórz strukturę `Osoba` o trzech polach `imie` (tablica znaków o rozmiarze 20), `wiek` (`int`), `wzrost` (`float`). Następnie stwórz funkcję, której argumentami jest tablica struktur `Osoba` oraz rozmiar tablicy. Funkcja ma zwrócić "osobę" o największym wzroście. Stwórz przypadek testowy.
+
+*Punktacja: 10 pkt.*
+
+5. Napisz funkcję, która porównuje dwie listy bez głowy o elementach typu:
+
+```c
+struct element {
+    int a;
+    struct element * next;
+};
+```
+
+i zwraca 1 jeśli średnie elementów na obu listach są równe oraz 0 w pozostałych przypadkach. Stwórz jeden przypadek testowy.
+
+
+*Punktacja: 15 pkt.*
